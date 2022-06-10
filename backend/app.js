@@ -1,13 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/user');
-const sauceRoutes = require('./routes/sauce')
+const sauceRoutes = require('./routes/sauce');
+const helmet = require('helmet');
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
 
 
-mongoose.connect('mongodb+srv://michelvieira:openclassrooms@cluster0.wyh8dkz.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect(process.env.URL_DATABASE,
 {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -17,7 +19,7 @@ mongoose.connect('mongodb+srv://michelvieira:openclassrooms@cluster0.wyh8dkz.mon
 
 app.use(express.json());
 
-
+app.use(helmet());
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
