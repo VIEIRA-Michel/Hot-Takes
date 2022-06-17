@@ -1,27 +1,20 @@
 # HotTakes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
-## Development server
+## Guide d'utilisation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Afin d'accéder au projet, placez-vous à la racine du projet depuis votre terminal et écrivez ceci `npm install` afin de télécharger les libraires nécessaires au bon fonctionnement du projet.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Créer un dossier `images` dans le répertoire `backend`.
 
-## Build
+Veillez à bien remplir le fichier `.env` avec les informations nécessaires pour permettre le bon démarrage du projet.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Back-end
 
-## Running unit tests
+Placez-vous dans le répertoire backend depuis votre terminal et écrivez ceci `node server` afin de lancer l'API, si un message vous indiquant que la connexion à mongoDB a échoué veuillez vérifié le lien d'accès à votre base de données.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Front-end
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Placez-vous dans à la racine du projet depuis votre terminal et écrivez ceci `npm start` afin de lancer l'application front-end.
+Rendez-vous sur la page `http://localhost:4200/` pour vous assurer que tout fonctionne correctement.
