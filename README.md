@@ -1,20 +1,44 @@
-# HotTakes
+<a href="#">
+  <img src="https://i.gyazo.com/f09f9486e321f949e756cffac4139dec.png" alt="HotTakes">
+</a>
+  
+**HotTakes** est le projet 6 de la formation développeur web d'OpenClassrooms.
 
+------
+  
+## Scénario
+>Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées.
+>
+>La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones ». C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes ».
 
-## Guide d'utilisation
+## Objectifs
+* Implémenter un modèle logique de données conformément à la réglementation
+* Mettre en œuvre des opérations CRUD de manière sécurisée
+* Stocker des données de manière sécurisée
 
+## Installation frontend
+1. Installer les dépendences
+*(dans le dossier `frontend`)*
+     ```
+     npm install
+     ```
+2. Lancer le serveur
+    ```
+    npm start
+    ```
+    *Port par défaut : `4200` (http://localhost:4200)*
 
-Afin d'accéder au projet, placez-vous à la racine du projet depuis votre terminal et écrivez ceci `npm install` afin de télécharger les libraires nécessaires au bon fonctionnement du projet.
-
-Créer un dossier `images` dans le répertoire `backend`.
-
-Veillez à bien remplir le fichier `.env` avec les informations nécessaires pour permettre le bon démarrage du projet.
-
-# Back-end
-
-Placez-vous dans le répertoire backend depuis votre terminal et écrivez ceci `node server` afin de lancer l'API, si un message vous indiquant que la connexion à mongoDB a échoué veuillez vérifié le lien d'accès à votre base de données.
-
-# Front-end
-
-Placez-vous dans à la racine du projet depuis votre terminal et écrivez ceci `npm start` afin de lancer l'application front-end.
-Rendez-vous sur la page `http://localhost:4200/` pour vous assurer que tout fonctionne correctement.
+## Installation backend
+1. Installer les dépendences
+*(dans le dossier `backend`)*
+     ```
+     npm install
+     ```
+2. Configurer les variables d'environnement  
+Modifier le nom du fichier **example.env** en **.env** et remplir la clé `DB_CONNECTION` pour l'URI de MongoDB  
+et `SECRET_TOKEN` pour la clé secrète.
+3. Lancer le serveur
+    ```
+    npm start
+    ```
+    *Port par défaut : `3000` (http://localhost:3000)*
